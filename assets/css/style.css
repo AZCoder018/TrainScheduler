@@ -1,28 +1,43 @@
 body {
     background: url("chattanooga.jpg");
+    background-image: fixed;
     
 }
 
 .jumbotron {
-    background-color: #efffff;
-    height: 100px;
+    background-color: white;
+    height: 120px;
     color: black;
     border: 5px grey solid;
-    font: 2em Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-top: 0px;
+    margin-top: 15px;
+    border: double;
+    border-width: 7px;
+    border-color: red;
 }
 
 #heading {
     text-align: center;
-    border-top: 2px;
-    padding-top: 0px; 
+    font-size: 55px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+    color: black;
+    border-top: 6px;
+    padding-top: 6px; 
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 #subheading {
     text-align: center;
     font-size: 20px;
+    color: black;
+    font-weight: 1000;
+    text-shadow:.25px .25px .25px gold;
     padding-top: 0px;
     border-top: 0px;
+    margin-top: 0px;
     font-style: italic;
 }
 
@@ -39,7 +54,7 @@ body {
 .panel-body {
     border: 5px solid black;
     background-color: white;
-    font-weight: 500;
+    font-weight: 1000;
     opacity: .975;
 }
 
@@ -48,56 +63,128 @@ body {
     color: white;
     background-color: blue;
     border: 5px solid black;
+    height: 50px;
+    border-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .current {
-    background-color: #efffff;
+    background-color: white;
     color: black;
     font-size:20px;
+    padding: 10px;
 }
 
 .add {
-    background-color: #efffff;
+    background-color: white;
     color: black;
     font-size:20px; 
+    padding: 10px;
 }
 
 #trainTable {
-    background-color: #efffff;
+    background-color: white;
     color: black;
     font-size: 20px;
-    font: bold;
+    font-weight: 1000;
+    margin-left: 5x;
+    margin-right: 0px;
+    font-weight: 500;
+    opacity: .975;
+}
+
+#trainName {
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+#destination {
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+#frequency {
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+#nextArrival {
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+#minutesAway {
+    font-weight: 1000;
+    text-decoration: underline;
 }
 
 #trainNameInput {
     color: black;
     font-size: 18px;
-    background-color: #efffff;
+    margin-left: 4px;
+    margin-right: 0px;
+    padding-right: 10px;
+    background-color: white;
 }
 
 #destinationInput {
     color: black;
     font-size: 18px;
-    background-color: #efffff;
+    margin-left: 4px;
+    margin-right: 0px;
+    background-color: white;
 }
 
 #timeInput {
     color: black;
     font-size: 18px;
-    background-color: #efffff;
+    margin-left: 4px;
+    margin-right: 0px;
+    background-color: white;
 }
 
 #frequencyInput {
     color: black;
     font-size: 18px;
-    background-color: #efffff;
+    margin-left: 4px;
+    margin-right: 0px;
+    background-color: white;
 }
 
 .form-group {
     color: black;
     font-size: 20px;
+    font-weight: 1000;
+    margin-left: 10px;
+    padding-left: 4px;
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+#chooChoo {
+    font-weight: 1000;
+    margin-left: 6px;
+}
+
+#desti {
+    font-weight: 1000;
+    margin-left: 6px;
+}
+
+#firstTrn {
+    font-weight: 1000;
+    margin-left: 6px;
+}
+
+#freq {
+    font-weight: 1000;
+    margin-left: 6px;
 }
 
 .btn {
     font-size: 20px;
+    background: blue;
+    border: 4px solid black;
+    margin-left: 4px;
+    margin-bottom: 4px;
 }

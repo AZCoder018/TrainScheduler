@@ -9,6 +9,7 @@ var config = {
   messagingSenderId: "478183497960"
 };
 firebase.initializeApp(config);
+
 var database = firebase.database();
 $('#addTrainBtn').on("click", function () {
   // take user input

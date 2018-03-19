@@ -17,8 +17,9 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-            <p id="heading">THE CHATTANOOGA RAILROAD</p>
-            <p id="subheading">"♪Pardon Me Boy, is that the Chattanooga Choo Choo...Yes! Yes!♪"</p>
+            <p id="heading">THE       CHATTANOOGA       RAILROAD</p>
+            <br>
+            <p id="subheading"> ♪ Pardon Me Boy, is that the Chattanooga Choo Choo...Yes! Yes! ♪ </p>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -31,11 +32,11 @@
                     <table class="table" id="trainTable">
                         <thead>
                             <tr>
-                                <th>Train Name</th>
-                                <th>Destination</th>
-                                <th>Frequency (min)</th>
-                                <th>Next Arrival</th>
-                                <th>Minutes Away</th>
+                                <th id="trainName">Train Name</th>
+                                <th id="destination">Destination</th>
+                                <th id="frequency">Frequency (min)</th>
+                                <th id="nextArrival">Next Arrival</th>
+                                <th id="minutesAway">Minutes Away</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -47,28 +48,28 @@
             <div class="col-lg-12">
             <div class="panel panel-primary">
                 <br>
-                <br>
                 <div class="panel-heading">
                     <h3 class="panel-title add" id="train">
                         <strong>Add Train</strong>
                     </h3>
                 </div>
                 <div class="panel-body">
+                    <br>
                     <form>
                         <div class="form-group">
-                            <label for="">Train Name</label>
+                            <label for="" id="chooChoo">Train Name</label>
                             <input type="text" class="form-control" id="trainNameInput">
                         </div>
                         <div class="form-group">
-                            <label for="">Destination</label>
+                            <label for="" id="desti">Destination</label>
                             <input type="text" class="form-control" id="destinationInput">
                         </div>
                         <div class="form-group">
-                            <label for="">First Train Time (HH:mm - military time)</label>
+                            <label for="" id="firstTrn">First Train Time (HH:mm - military time)</label>
                             <input type="text" class="form-control" id="timeInput">
                         </div>
                         <div class="form-group">
-                            <label for="">Frequency (min)</label>
+                            <label for="" id="freq">Frequency (min)</label>
                             <input type="text" class="form-control" id="frequencyInput">
                         </div>
                         <button type="submit" class="btn btn-primary" id="addTrainBtn">Submit
