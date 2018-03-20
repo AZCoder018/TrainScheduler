@@ -1,7 +1,5 @@
 body {
-    background: url("chattanooga.jpg");
-    background-image: fixed;
-    
+    background: url("chattanooga.jpg") fixed;
 }
 
 .jumbotron {
@@ -19,7 +17,7 @@ body {
 
 #heading {
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 1000;
     color: black;
@@ -31,7 +29,7 @@ body {
 
 #subheading {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     font-weight: 1000;
     text-shadow:.25px .25px .25px gold;

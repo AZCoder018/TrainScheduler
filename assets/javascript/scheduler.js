@@ -29,7 +29,6 @@ $('#addTrainBtn').on("click", function () {
   //Upload to Firebase
   database.ref().push(newTrain);
   
-
   // Clear text-boxes
   $("#trainNameInput").val("");
   $("#destinationInput").val("");
@@ -40,32 +39,29 @@ $('#addTrainBtn').on("click", function () {
   return false;
 });
 
-//  Create event listener for adding trains to Firebase and a row in the html when the user adds an entry
+//  Create event listener for adding trains to Firebase; add row in the html when the user adds an entry
 database.ref().on("child_added", function (childSnapshot) {
   
-  // Store the childSnapshot values into a variable
+  // Store the childSnapshot values into variables
 
   var trainName = childSnapshot.val().name;
   var destination = childSnapshot.val().place;
   var firstTrain = childSnapshot.val().ftrain;
   var frequency = childSnapshot.val().freq;
 
-  // first Train pushed back to make sure it comes before current time
+  // First Train pushed back to make sure it comes before current time
   var firstTimeConverted = moment(firstTrain, "HH:mm");
-  console.log(firstTimeConverted);
   var currentTime = moment().format("HH:mm");
-  console.log("CURRENT TIME: " + currentTime);
 
-  // store difference between currentTime and fisrt train converted in a variable.
+  // Variable for difference between currentTime and fisrt train 
   var timeDiff = moment().diff(moment(firstTimeConverted), "minutes");
 
-  // find Remainder of the time left and store in a variable
+  // Remainder of the time left and store in a variable
   var timeRemainder = timeDiff % frequency;
  
-  // to calculate minutes till train,we store it in a variable
+  // Variable for minutes until train 
   var minToTrain = frequency - timeRemainder;
 
-  // next train
   var nxTrain = moment().add(minToTrain, "minutes").format("HH:mm");
   $("#trainTable>tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + nxTrain + "</td><td>" + frequency + "</td><td>" + minToTrain + "</td></tr>");
 });
