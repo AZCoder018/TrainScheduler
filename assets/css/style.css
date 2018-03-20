@@ -19,7 +19,7 @@ body {
 
 #heading {
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 1000;
     color: black;
@@ -38,6 +38,7 @@ body {
     padding-top: 0px;
     border-top: 0px;
     margin-top: 0px;
+    border-bottom: 3px;
     font-style: italic;
 }
 
@@ -66,6 +67,7 @@ body {
     height: 50px;
     border-bottom: 0px;
     margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .current {
@@ -164,6 +166,8 @@ body {
 #chooChoo {
     font-weight: 1000;
     margin-left: 6px;
+    margin-top: 1px;
+    padding-top: 1px;
 }
 
 #desti {
