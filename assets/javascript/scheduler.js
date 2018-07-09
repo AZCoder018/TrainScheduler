@@ -12,7 +12,7 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 $('#addTrainBtn').on("click", function () {
-  
+
   var trainName = $("#trainNameInput").val().trim();
   var destination = $("#destinationInput").val().trim();
   var firstTrain = moment($("#timeInput").val().trim(), "HH:mm").format("HH:mm");
@@ -28,7 +28,7 @@ $('#addTrainBtn').on("click", function () {
 
   //Upload to Firebase
   database.ref().push(newTrain);
-  
+
   // Clear text-boxes
   $("#trainNameInput").val("");
   $("#destinationInput").val("");
@@ -41,7 +41,7 @@ $('#addTrainBtn').on("click", function () {
 
 //  Create event listener for adding trains to Firebase; add row in the html when the user adds an entry
 database.ref().on("child_added", function (childSnapshot) {
-  
+
   // Store the childSnapshot values into variables
 
   var trainName = childSnapshot.val().name;
@@ -58,7 +58,7 @@ database.ref().on("child_added", function (childSnapshot) {
 
   // Remainder of the time left and store in a variable
   var timeRemainder = timeDiff % frequency;
- 
+
   // Variable for minutes until train 
   var minToTrain = frequency - timeRemainder;
 
